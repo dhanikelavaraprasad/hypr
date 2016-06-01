@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/taskmanagement</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <mapping class="com.cyb.tms.entity.TmsEfforts" />
+        <mapping class="com.cyb.tms.entity.TmsModule" />
+        <mapping class="com.cyb.tms.entity.TmsCodeReview" />
+        <mapping class="com.cyb.tms.entity.TmsStatusMst" />
+        <mapping class="com.cyb.tms.entity.TmsLeaveMst" />
+        <mapping class="com.cyb.tms.entity.TmsSprintMst" />
+        <mapping class="com.cyb.tms.entity.TmsProject" />
+        <mapping class="com.cyb.tms.entity.TmsSubtask" />
+        <mapping class="com.cyb.tms.entity.UserStoryStaus" />
+        <mapping class="com.cyb.tms.entity.TmsStoryMst" />
+        <mapping class="com.cyb.tms.entity.TmsUsers" />
+    </session-factory>
+</hibernate-configuration>
